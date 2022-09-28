@@ -13,6 +13,15 @@ import BadgeScreen from './src/screens/Badges';
 import ButtonScreen from './src/screens/ButtonScreen';
 import CardScreen from './src/screens/CardScreen';
 import CheckboxScreen from './src/screens/CheckboxScreen';
+import ChipScreen from './src/screens/ChipScreen';
+import ContentScreen from './src/screens/ContentScreen';
+import DateTimeScreen from './src/screens/DateTimeScreen';
+import FloatingButtonScreen from './src/screens/FloatingButtonScreen';
+import GridScreen from './src/screens/GridScreen';
+import InputScreen from './src/screens/InputScreen';
+import ItemScreen from './src/screens/ItemScreen';
+import InfiniteScrollScreen from './src/screens/InfiniteScrollScreen';
+import ItemGroupScreen from './src/screens/ItemGroupScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +38,15 @@ function App() {
         <Stack.Screen name="Buttons" component={ButtonScreen} />
         <Stack.Screen name="Cards" component={CardScreen} />
         <Stack.Screen name="Checkbox" component={CheckboxScreen} />
+        <Stack.Screen name="Chip" component={ChipScreen} />
+        <Stack.Screen name="Content" component={ContentScreen} />
+        <Stack.Screen name="DateTime" component={DateTimeScreen} />
+        <Stack.Screen name="FloatingButton" component={FloatingButtonScreen} />
+        <Stack.Screen name="Grid" component={GridScreen} />
+        <Stack.Screen name="Input" component={InputScreen} />
+        <Stack.Screen name="Item" component={ItemScreen} />
+        <Stack.Screen name="InfiniteScroll" component={InfiniteScrollScreen} />
+        <Stack.Screen name="ItemGroup" component={ItemGroupScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
