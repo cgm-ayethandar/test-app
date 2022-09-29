@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { ScrollView, View, Text, TouchableOpacity } from "react-native";
 import styles from "./style";
 
 const HomeScreen = ({ navigation }) => {
@@ -13,10 +13,20 @@ const HomeScreen = ({ navigation }) => {
     { title: "Buttons", routeName: "Buttons" },
     { title: "Cards", routeName: "Cards" },
     { title: "Checkbox", routeName: "Checkbox" },
+    { title: "Chip", routeName: "Chip" },
+    { title: "Content", routeName: "Content" },
+    { title: "DateTime", routeName: "DateTime" },
+    { title: "FloatingButtons", routeName: "FloatingButton" },
+    { title: "Grid", routeName: "Grid" },
+    { title: "Input", routeName: "Input" },
+    { title: "Item", routeName: "Item" },
+    { title: "ItemGroup", routeName: "ItemGroup" },
+    { title: "InfiniteScroll", routeName: "InfiniteScroll" },
   ];
 
   return (
-    <View style={styles.container}>
+    <ScrollView>
+      <View style={styles.container}>
       {list.map((item, key) => <TouchableOpacity
         key={key}
         style={styles.item}
@@ -25,6 +35,7 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.itemText}>{item.title}</Text>
       </TouchableOpacity> )}
     </View>
+    </ScrollView>
   );
 };
 
