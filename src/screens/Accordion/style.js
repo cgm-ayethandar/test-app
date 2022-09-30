@@ -11,10 +11,16 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: "gray",
   },
-  accordionText: {
-    paddingLeft: 10,
+  accordionTitle: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     borderTopWidth: 1,
     borderColor: "gray",
+    paddingVertical: 5,
+  },
+  accordionText: {
+    paddingLeft: 10,
     paddingVertical: 10,
   },
   accordionItem: {

@@ -22,6 +22,21 @@ const HomeScreen = ({ navigation }) => {
     { title: "Item", routeName: "Item" },
     { title: "ItemGroup", routeName: "ItemGroup" },
     { title: "InfiniteScroll", routeName: "InfiniteScroll" },
+    { title: "List", routeName: "List" },
+    { title: "Loading", routeName: "Loading" },
+    { title: "Searchbar", routeName: "Searchbar" },
+    { title: "Refresher", routeName: "Refresher" },
+    { title: "Menu", routeName: "Menu" },
+    { title: "Modal", routeName: "Modal" },
+    { title: "Popover", routeName: "Popover" },
+    { title: "Radio", routeName: "Radio" },
+    { title: "Picker", routeName: "Picker" },
+    { title: "Segment", routeName: "Segment" },
+    { title: "Toggle", routeName: "Toggle" },
+    { title: "Toast", routeName: "Toast" },
+    { title: "Skeleton Text", routeName: "SkeletonText" },
+    { title: "Slider", routeName: "Slider" },
+    { title: "Select", routeName: "Select" },
   ];
 
   return (
