@@ -15,13 +15,13 @@ const scrollToTop = () => {
   });
 }
 
-const scrollToBotton = () => {
+const scrollToBottom = () => {
     scrollRef.current?.scrollToEnd();
   }  
 
   return (
     <ScrollView ref={scrollRef} style={styles.container}>
-        <TouchableOpacity style={styles.button} onPress={scrollToBotton}
+        <TouchableOpacity style={styles.buttom} onPress={scrollToBottom}
         ><Text style={styles.buttonText} >Scroll to botton</Text></TouchableOpacity>
       {list.map((item, key) => (
         <View style={styles.titleContainer}>

@@ -1,7 +1,7 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, SafeAreaView, StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/screens/HomeScreen';
@@ -22,11 +22,27 @@ import InputScreen from './src/screens/InputScreen';
 import ItemScreen from './src/screens/ItemScreen';
 import InfiniteScrollScreen from './src/screens/InfiniteScrollScreen';
 import ItemGroupScreen from './src/screens/ItemGroupScreen';
+import ListScreen from './src/screens/ListScreen';
+import LoadingScreen from './src/screens/LoadingScreen';
+import SearchbarScreen from './src/screens/SearchbarScreen';
+import RefresherScreen from './src/screens/RefresherScreen';
+import MenuScreen from './src/screens/MenuScreen';
+import ModalScreen from './src/screens/ModalScreen';
+import PopoverScreen from './src/screens/PopoverScreen';
+import RadioScreen from './src/screens/RadioScreen';
+import PickerScreen from './src/screens/PickerScreen';
+import SegmentScreen from './src/screens/SegmentScreen';
+import ToggleScreen from './src/screens/ToggleScreen';
+import ToastScreen from './src/screens/ToastScreen';
+import SkeletonTextScreen from './src/screens/SkeletonTextScreen';
+import SliderScreen from './src/screens/SliderScreen';
+import SelectScreen from './src/screens/SelectScreen';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
+  
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
@@ -47,8 +63,24 @@ function App() {
         <Stack.Screen name="Item" component={ItemScreen} />
         <Stack.Screen name="InfiniteScroll" component={InfiniteScrollScreen} />
         <Stack.Screen name="ItemGroup" component={ItemGroupScreen} />
+        <Stack.Screen name="List" component={ListScreen} />
+        <Stack.Screen name="Loading" component={LoadingScreen} />
+        <Stack.Screen name="Searchbar" component={SearchbarScreen} />
+        <Stack.Screen name="Refresher" component={RefresherScreen} />
+        <Stack.Screen name="Menu" component={MenuScreen} />
+        <Stack.Screen name="Modal" component={ModalScreen} />
+        <Stack.Screen name="Popover" component={PopoverScreen} />
+        <Stack.Screen name="Radio" component={RadioScreen} />
+        <Stack.Screen name="Picker" component={PickerScreen} />
+        <Stack.Screen name="Segment" component={SegmentScreen} />
+        <Stack.Screen name="Toggle" component={ToggleScreen} />
+        <Stack.Screen name="Toast" component={ToastScreen} />
+        <Stack.Screen name="SkeletonText" component={SkeletonTextScreen} />
+        <Stack.Screen name="Slider" component={SliderScreen} />
+        <Stack.Screen name="Select" component={SelectScreen} />
       </Stack.Navigator>
     </NavigationContainer>
+    
   );
 }
 
