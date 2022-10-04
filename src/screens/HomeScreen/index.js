@@ -1,9 +1,8 @@
-import * as React from "react";
 import { ScrollView, View, Text, TouchableOpacity } from "react-native";
+import React from "react";
 import styles from "./style";
 
 const HomeScreen = ({ navigation }) => {
-  
   const list = [
     { title: "Accordion", routeName: "Accordion" },
     { title: "Action Sheet", routeName: "ActionSheet" },
@@ -37,20 +36,25 @@ const HomeScreen = ({ navigation }) => {
     { title: "Skeleton Text", routeName: "SkeletonText" },
     { title: "Slider", routeName: "Slider" },
     { title: "Select", routeName: "Select" },
+    { title: "Play mp3", routeName: "PlayMp3" },
   ];
 
   return (
+    <>
     <ScrollView>
       <View style={styles.container}>
-      {list.map((item, key) => <TouchableOpacity
-        key={key}
-        style={styles.item}
-        onPress={() => navigation.navigate(`${item.routeName}`)}
-      >
-        <Text style={styles.itemText}>{item.title}</Text>
-      </TouchableOpacity> )}
-    </View>
+        {list.map((item, key) => (
+          <TouchableOpacity
+            key={key}
+            onPress={() => navigation.navigate(`${item.routeName}`)}
+            style={styles.item}
+          >
+            <Text style={styles.itemText}>{item.title}</Text>
+          </TouchableOpacity>
+        ))}
+      </View>
     </ScrollView>
+    </>
   );
 };
 

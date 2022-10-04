@@ -1,7 +1,7 @@
-import * as React from "react";
 import { View } from "react-native";
-import styles from "./style";
 import CheckboxItem from "../../Component/CheckboxItem";
+import React from "react";
+import styles from "./style";
 
 const CheckboxScreen = () => {
   const list = [
@@ -15,11 +15,13 @@ const CheckboxScreen = () => {
   ];
 
   return (
-    <View style={styles.container}>
-      {list.map((item, key) => (
+    <>
+      <View style={styles.container}>
+        {list.map((item, key) => (
           <CheckboxItem key={key} item={item} />
-      ))}
-    </View>
+        ))}
+      </View>
+    </>
   );
 };
 

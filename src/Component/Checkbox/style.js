@@ -2,16 +2,15 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     checkboxBase: {
-        width: 25,
+        alignItems: 'center',
+        backgroundColor: 'transparent',
+        borderColor: 'gray',
+        borderRadius: 12,
+        borderWidth: 1,
         height: 25,
         justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: "50%",
-        borderWidth: 1,
-        borderColor: 'gray',
-        backgroundColor: 'transparent',
+        width: 25,
       },
-    
       checkboxChecked: {
         backgroundColor: 'coral',
       },

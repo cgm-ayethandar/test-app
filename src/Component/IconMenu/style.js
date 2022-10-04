@@ -2,31 +2,31 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-      width: "95%",
-      flexDirection: "row",
-      paddingVertical: 5,
-      paddingHorizontal: 5,
       alignItems: "center",
+      flexDirection: "row",
+      paddingHorizontal: 5,
+      paddingVertical: 5,
+      width: "95%",
     },
     textContainer: {
-        width: "83%",
-        marginLeft: 20,
         borderBottomWidth: 1,
         borderColor: "#DCDCDC",
+        marginLeft: 20,
         paddingVertical: 10,
+        width: "83%",
     },
     title: {
         fontSize: 16,
         fontWeight: "400",
     },
     text: {
-        fontSize: 14,
         color: "gray",
+        fontSize: 14,
     },
     profile: {
-      width: 40,
       height: 40,
       marginLeft: 10,
+      width: 40,
     },
   });
 

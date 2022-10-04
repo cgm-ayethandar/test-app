@@ -2,11 +2,11 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   chip: {
-    flexDirection: "row",
     alignItems: "center",
-    paddingVertical: 2,
+    borderRadius: 20,
+    flexDirection: "row",
     paddingHorizontal: 10,
-    borderRadius: "50%",
+    paddingVertical: 2,
   },
   chipText: {
     fontSize: 14,
@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
     marginLeft: 8,
   },
   profile: {
-    width: 25,
     height: 25,
+    width: 25,
   },
 });
 

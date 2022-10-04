@@ -1,65 +1,64 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    container: {
-      flexDirection: "column",
+  container: {
+    flexDirection: "column",
+  },
+  select: {
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  selectText: {
+    fontSize: 16,
+    fontWeight: "400",
+  },
+  centeredView: {
+    alignItems: "center",
+    flex: 1,
+    justifyContent: "center",
+    marginTop: 22,
+  },
+  modalView: {
+    alignItems: "center",
+    backgroundColor: "white",
+    borderRadius: 20,
+    elevation: 5,
+    margin: 20,
+    paddingTop: 25,
+    shadowColor: "#000",
+    shadowOffset: {
+      height: 2,
+      width: 0,
     },
-    select: {
-      flexDirection: "row",
-      justifyContent: "space-between",
-      alignItems: "center",
-    },
-    selectText: {
-      fontSize: 16,
-      fontWeight: "400",
-    },
-    centeredView: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      marginTop: 22
-    },
-    modalView: {
-      margin: 20,
-      backgroundColor: "white",
-      borderRadius: 20,
-      paddingTop: 25,
-      alignItems: "center",
-      shadowColor: "#000",
-      shadowOffset: {
-        width: 0,
-        height: 2
-      },
-      shadowOpacity: 0.25,
-      shadowRadius: 4,
-      elevation: 5
-    },
-    modalHeaderView: {
-      width: "95%",
-      paddingBottom: 10 ,
-      borderBottomWidth: 1,
-      borderBottomColor: "gray",
-      marginBottom: 5,
-    },
-    modalHeader: {
-      fontSize: 18,
-      fontWeight: "500",
-      textAlign: "center",
-    },
-    modalButtomView: {
-      width: "100%",
-      flexDirection: "row",
-      alignItems: "center",
-    },
-    modalButtom: {
-      width: "50%",
-      borderColor: "#DCDCDC",
-    },
-    modalText: {
-      padding: 15,
-      textAlign: "center"
-    }
-   
-  });
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+  },
+  modalHeaderView: {
+    borderBottomColor: "gray",
+    borderBottomWidth: 1,
+    marginBottom: 5,
+    paddingBottom: 10,
+    width: "95%",
+  },
+  modalHeader: {
+    fontSize: 18,
+    fontWeight: "500",
+    textAlign: "center",
+  },
+  modalButtomView: {
+    alignItems: "center",
+    flexDirection: "row",
+    width: "100%",
+  },
+  modalButtom: {
+    borderColor: "#DCDCDC",
+    width: "50%",
+  },
+  modalText: {
+    padding: 15,
+    textAlign: "center",
+  },
+});
 
 export default styles;

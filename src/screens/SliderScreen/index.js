@@ -1,10 +1,12 @@
-import React, { useCallback, memo, useRef, useState, useEffect } from "react";
-import { FlatList,
-  View,
+import {
   Dimensions,
-  Text,
+  FlatList,
+  Image,
   StyleSheet,
-  Image, } from "react-native";
+  Text,
+  View,
+} from "react-native";
+import React from "react";
 // import styles from "./style";
 
 const { width: windowWidth, height: windowHeight } = Dimensions.get("window");
@@ -20,14 +22,21 @@ const slideList = Array.from({ length: 30 }).map((_, i) => {
 
 const styles = StyleSheet.create({
   slide: {
-    height: windowHeight,
-    width: windowWidth,
-    justifyContent: "center",
     alignItems: "center",
+    height: windowHeight,
+    justifyContent: "center",
+    width: windowWidth,
   },
-  slideImage: { width: windowWidth * 0.9, height: windowHeight * 0.7 },
-  slideTitle: { fontSize: 24 },
-  slideSubtitle: { fontSize: 18 },
+  slideImage: {
+    width: windowWidth * 0.9,
+    height: windowHeight * 0.7,
+  },
+  slideTitle: {
+    fontSize: 24,
+  },
+  slideSubtitle: {
+    fontSize: 18,
+  },
 
   pagination: {
     position: "absolute",
@@ -42,25 +51,30 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     marginHorizontal: 2,
   },
-  paginationDotActive: { backgroundColor: "lightblue" },
-  paginationDotInactive: { backgroundColor: "gray" },
-
-  carousel: { flex: 1 },
+  paginationDotActive: {
+    backgroundColor: "lightblue",
+  },
+  paginationDotInactive: {
+    backgroundColor: "gray",
+  },
+  carousel: {
+    flex: 1,
+  },
 });
 
 function Slide({ data }) {
   return (
     <View
       style={{
-        height: windowHeight,
-        width: windowWidth,
-        justifyContent: "center",
         alignItems: "center",
+        height: windowHeight,
+        justifyContent: "center",
+        width: windowWidth,
       }}
     >
       <Image
         source={{ uri: data.image }}
-        style={{ width: windowWidth * 0.9, height: windowHeight * 0.70 }}
+        style={{ width: windowWidth * 0.9, height: windowHeight * 0.7 }}
       ></Image>
       <Text style={{ fontSize: 24 }}>{data.title}</Text>
       <Text style={{ fontSize: 18 }}>{data.subtitle}</Text>
@@ -69,20 +83,20 @@ function Slide({ data }) {
 }
 
 const SliderScreen = () => {
-
   return (
-    <FlatList
-      data={slideList}
-      style={{ flex: 1 }}
-      renderItem={({ item }) => {
-        return <Slide data={item} />;
-      }}
-      pagingEnabled
-      horizontal
-      showsHorizontalScrollIndicator={false}
-    />
+    <>
+      <FlatList
+        data={slideList}
+        horizontal
+        pagingEnabled
+        renderItem={({ item }) => {
+          return <Slide data={item} />;
+        }}
+        style={{ flex: 1 }}
+        showsHorizontalScrollIndicator={false}
+      />
+    </>
   );
-
-}
+};
 
 export default SliderScreen;

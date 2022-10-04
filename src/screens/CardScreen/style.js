@@ -2,12 +2,12 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    margin: 15,
-    backgroundColor: "white",
-    flexDirection: 'column',
     alignItems: "baseline",
-    paddingBottom: 20,
+    backgroundColor: "white",
     borderRadius: 15,
+    flexDirection: "column",
+    margin: 15,
+    paddingBottom: 20,
   },
 });
 

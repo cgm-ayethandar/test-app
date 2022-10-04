@@ -1,9 +1,10 @@
-import * as React from "react";
 import { Text, View } from "react-native";
+import React from "react";
 import styles from "./style";
 
 const Badge = ({ item }) => {
   return (
+    <>
     <View style={styles.row}>
       <Text style={styles.title}>{item.title}</Text>
       <View
@@ -14,9 +15,17 @@ const Badge = ({ item }) => {
             : { backgroundColor: "blue" },
         ]}
       >
-        <Text style={[styles.badgeText, item.ftColor ? { color: item.fgColor } : {color: "white"},]}>{item.badgeText}</Text>
+        <Text
+          style={[
+            styles.badgeText,
+            item.ftColor ? { color: item.fgColor } : { color: "white" },
+          ]}
+        >
+          {item.badgeText}
+        </Text>
       </View>
     </View>
+    </>
   );
 };
 

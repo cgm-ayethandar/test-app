@@ -1,23 +1,32 @@
-import * as React from "react";
-import { View, Text} from "react-native";
-import styles from "./style";
+import { View, Text } from "react-native";
+import React from "react";
 import Select from "../../Component/Select";
+import styles from "./style";
 
 const SelectScreen = () => {
-  
   const selectList = [
-    { title: "Origin", items: ["Madison", "Chicago", "Austin"] },
-    { title: "Destination", items: ["New York", "Honolulu", "Baltimore"] },
+    {
+      items: ["Madison", "Chicago", "Austin"],
+      title: "Origin",
+    },
+    {
+      items: ["New York", "Honolulu", "Baltimore"],
+      title: "Destination",
+    },
   ];
 
-    return (
+  return (
+    <>
       <View style={styles.container}>
-        <Text style={styles.title} >Select Trip</Text>
-        { selectList.map((item, key) => <View key={key} style={styles.selectContainer}>
-          <Select item={item} />
-        </View>) }
+        <Text style={styles.title}>Select Trip</Text>
+        {selectList.map((item, key) => (
+          <View key={key} style={styles.selectContainer}>
+            <Select item={item} />
+          </View>
+        ))}
       </View>
-    );
-  };
-  
-  export default SelectScreen;
+    </>
+  );
+};
+
+export default SelectScreen;

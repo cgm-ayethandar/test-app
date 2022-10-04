@@ -2,31 +2,31 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
   },
   modalContainer: {
+    alignItems: "center",
+    backgroundColor: "white",
     flex: 1,
     height: "100%",
-    backgroundColor: "white",
-    alignItems: "center",
   },
   titleContainer: {
-    flexDirection: "row",
-    width: "100%",
-    justifyContent: "space-between",
-    paddingTop: 25,
-    padding: 10,
+    backgroundColor: "#D3D3D3",
     borderBottomWidth: 1,
     borderColor: "gray",
-    backgroundColor: "#D3D3D3",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    padding: 10,
+    paddingTop: 25,
+    width: "100%",
   },
   modalTitle: {
-    textAlign: "center",
     fontSize: 18,
     fontWeight: "500",
-  }
+    textAlign: "center",
+  },
 });
 
 export default styles;

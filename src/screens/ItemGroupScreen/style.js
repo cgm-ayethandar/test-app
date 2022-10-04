@@ -7,22 +7,22 @@ const styles = StyleSheet.create({
     marginHorizontal: 2,
   },
   title: {
+    backgroundColor: "gray",
     fontSize: 18,
     fontWeight: "500",
-    paddingVertical: 8,
     paddingLeft: 10,
-    backgroundColor: "gray",
+    paddingVertical: 8,
   },
   itemContainer: {
-    flexDirection: "row",
-    marginLeft: 15,
     borderBottomWidth: 1,
     borderColor: "gray",
+    flexDirection: "row",
+    marginLeft: 15,
     paddingVertical: 8,
   },
   textbold: {
-    marginLeft: 5,
     fontWeight: "500",
+    marginLeft: 5,
   },
 });
 

@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
 import {
-  SafeAreaView,
-  StyleSheet,
   ActivityIndicator,
   FlatList,
+  RefreshControl,
+  SafeAreaView,
   Text,
   View,
-  RefreshControl,
-} from 'react-native';
+} from "react-native";
+import React, { useState, useEffect } from "react";
 
 const RefresherScreen = () => {
   const [refreshing, setRefreshing] = useState(true);
@@ -17,7 +16,7 @@ const RefresherScreen = () => {
   }, []);
 
   const loadUserData = () => {
-    fetch('https://randomuser.me/api/?results=8')
+    fetch("https://randomuser.me/api/?results=8")
       .then((response) => response.json())
       .then((responseJson) => {
         setRefreshing(false);
@@ -36,8 +35,8 @@ const RefresherScreen = () => {
         style={{
           fontSize: 20,
           padding: 10,
-        }}>
-        
+        }}
+      >
         {item.name.first} {item.name.last}
       </Text>
     );
@@ -47,28 +46,30 @@ const RefresherScreen = () => {
     return (
       <View
         style={{
+          backgroundColor: "#C8C8C8",
           height: 1,
-          width: '100%',
-          backgroundColor: '#C8C8C8',
+          width: "100%",
         }}
       />
     );
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, marginTop: 20 }}>
+    <>
+      <SafeAreaView style={{ flex: 1, marginTop: 20 }}>
         {refreshing ? <ActivityIndicator /> : null}
         <FlatList
           data={userData}
-          keyExtractor={(item, index) => index.toString()}
-          ItemSeparatorComponent={ItemSeparatorView}
           enableEmptySections={true}
+          ItemSeparatorComponent={ItemSeparatorView}
+          keyExtractor={(item, index) => index.toString()}
           renderItem={ItemView}
           refreshControl={
             <RefreshControl refreshing={refreshing} onRefresh={loadUserData} />
           }
         />
-    </SafeAreaView>
+      </SafeAreaView>
+    </>
   );
 };
 

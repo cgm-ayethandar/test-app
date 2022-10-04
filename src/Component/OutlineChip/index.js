@@ -1,20 +1,27 @@
-import * as React from "react";
 import { Text, View } from "react-native";
+import React from "react";
 import styles from "./style";
 
-const OutlineChip = ({item}) => {
-    return (
-      <View
+const OutlineChip = ({ item }) => {
+  return (
+    <>
+    <View
+      style={[
+        styles.chip,
+        item.ftColor ? { borderColor: item.ftColor } : { borderColor: "gray" },
+      ]}
+    >
+      <Text
         style={[
-          styles.chip,
-          item.ftColor
-            ? { borderColor: item.ftColor }
-            : { borderColor: "gray" },
+          styles.chipText,
+          item.ftColor ? { color: item.fgColor } : { color: "black" },
         ]}
       >
-        <Text style={[styles.chipText, item.ftColor ? { color: item.fgColor } : {color: "black"},]}>{item.chipText}</Text>
-      </View>
-    );
+        {item.chipText}
+      </Text>
+    </View>
+    </>
+  );
 };
 
 export default OutlineChip;

@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
   chip: {
-    width: "37%",
-    flexDirection: "row",
     alignItems: "center",
+    borderRadius: 20,
     borderWidth: 1,
-    paddingVertical: 6,
+    flexDirection: "row",
     paddingHorizontal: 10,
-    borderRadius: "50%",
+    paddingVertical: 6,
+    width: "37%",
   },
   chipText: {
     fontSize: 14,

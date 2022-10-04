@@ -2,13 +2,13 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-      width: "95%",
-      flexDirection: "row",
-      paddingVertical: 5,
-      marginHorizontal: 5,
       alignItems: "center",
       borderBottomWidth: 1,
       borderColor: "#DCDCDC",
+      flexDirection: "row",
+      marginHorizontal: 5,
+      paddingVertical: 5,
+      width: "95%",
     },
     textContainer: {
         marginLeft: 25,
@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
         marginBottom: 3,
     },
     text: {
-        fontSize: 14,
         color: "gray",
+        fontSize: 14,
     },
     profile: {
-      width: 40,
       height: 40,
       marginLeft: 10,
+      width: 40,
     },
   });
 

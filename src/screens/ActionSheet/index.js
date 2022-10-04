@@ -1,20 +1,19 @@
-import * as React from "react";
-import { ActionSheetIOS, Button, StyleSheet, Text, View } from "react-native";
+import { ActionSheetIOS, Button, Text, View } from "react-native";
+import React, { useState } from "react";
 import styles from "./style";
 
 const ActionSheet = () => {
-
-  const [result, setResult] = React.useState("🔮");
+  const [result, setResult] = useState("🔮");
 
   const onPress = () =>
     ActionSheetIOS.showActionSheetWithOptions(
       {
-        options: ["Cancel", "Delete", "Share", "Play (open Modal)", "Favorite"],
-        destructiveButtonIndex: 1,
         cancelButtonIndex: 0,
-        userInterfaceStyle: 'dark'
+        destructiveButtonIndex: 1,
+        options: ["Cancel", "Delete", "Share", "Play (open Modal)", "Favorite"],
+        userInterfaceStyle: "dark",
       },
-      buttonIndex => {
+      (buttonIndex) => {
         if (buttonIndex === 0) {
           // cancel action
         } else if (buttonIndex === 1) {
@@ -26,10 +25,12 @@ const ActionSheet = () => {
     );
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.result}>{result}</Text>
-      <Button onPress={onPress} title="Open Action Sheet" />
-    </View>
+    <>
+      <View style={styles.container}>
+        <Text style={styles.result}>{result}</Text>
+        <Button onPress={onPress} title="Open Action Sheet" />
+      </View>
+    </>
   );
 };
 

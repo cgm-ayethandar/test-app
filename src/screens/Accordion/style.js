@@ -2,21 +2,21 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 20,
     alignItems: "center",
     justifyContent: "center",
+    paddingTop: 20,
   },
   accordion: {
-    width: "95%",
     borderBottomWidth: 1,
     borderColor: "gray",
+    width: "95%",
   },
   accordionTitle: {
+    alignItems: "center",
+    borderColor: "gray",
+    borderTopWidth: 1,
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center",
-    borderTopWidth: 1,
-    borderColor: "gray",
     paddingVertical: 5,
   },
   accordionText: {
@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   accordionItem: {
-    paddingLeft: 20,
-    borderTopWidth: 1,
     borderColor: "gray",
+    borderTopWidth: 1,
+    paddingLeft: 20,
     paddingVertical: 8,
   },
 });
