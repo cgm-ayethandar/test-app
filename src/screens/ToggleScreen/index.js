@@ -1,10 +1,9 @@
-import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
+import React from "react";
 import styles from "./style";
 import Toggle from "../../Component/Toggle";
 
 const ToggleScreen = () => {
-
   const list = [
     { title: "Blueberry", bgColor: "blue" },
     { title: "Apple", bgColor: "red" },
@@ -15,11 +14,16 @@ const ToggleScreen = () => {
   ];
 
   return (
-    <ScrollView>
-    <View style={styles.container}>
-      {list.map((item, key) => <Toggle key={key} item={item} /> )}
-    </View></ScrollView>
+    <>
+      <ScrollView>
+        <View style={styles.container}>
+          {list.map((item, key) => (
+            <Toggle key={key} item={item} />
+          ))}
+        </View>
+      </ScrollView>
+    </>
   );
-}
+};
 
 export default ToggleScreen;

@@ -1,20 +1,17 @@
-import * as React from "react";
-import { View, DatePickerIOS, Text, TouchableOpacity } from "react-native";
-import styles from "./style";
+import { View, DatePickerIOS, Text } from "react-native";
+import React, { useState } from "react";
 
 const DateTimeScreen = () => {
+  const [chosenDate, setChosenDate] = useState(new Date());
 
-    const [chosenDate, setChosenDate] = React.useState(new Date());
-
-    return (
-        <View>
-            <DatePickerIOS
-        date={chosenDate}
-        onDateChange={setChosenDate}
-      />
-      {chosenDate && <Text>{chosenDate.getDate}</Text>}
-        </View>
-    );
+  return (
+    <>
+      <View>
+        <DatePickerIOS date={chosenDate} onDateChange={setChosenDate} />
+        {chosenDate && <Text>{chosenDate.getDate}</Text>}
+      </View>
+    </>
+  );
 };
 
 export default DateTimeScreen;

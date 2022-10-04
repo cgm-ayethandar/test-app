@@ -2,42 +2,42 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
   },
   popoverView: {
-    width: "50%",
-    position: "absolute",
-    bottom: 333,
-    left: 20,
     backgroundColor: "white",
-    padding: 20,
     borderRadius: 10,
-    zIndex: 1,
+    bottom: 333,
+    elevation: 5,
+    left: 20,
+    padding: 20,
+    position: "absolute",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 2
+      height: 2,
     },
     shadowOpacity: 0.25,
     shadowRadius: 4,
-    elevation: 5
+    width: "50%",
+    zIndex: 1,
   },
   popoverTitle: {
-    width: "100%",
-    marginLeft: 10,
-    marginBottom: 5,
     fontSize: 18,
     fontWeight: "bold",
+    marginBottom: 5,
+    marginLeft: 10,
+    width: "100%",
   },
   popoverItemContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
-    marginLeft: 10,
     borderBottomWidth: 1,
     borderColor: "#D3D3D3",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginLeft: 10,
     paddingVertical: 8,
   },
 });

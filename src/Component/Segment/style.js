@@ -2,22 +2,22 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   segmentContainer: {
-    flexDirection: "row",
-    marginHorizontal: 5,
-    borderRadius: 5,
-    padding: 5,
-    justifyContent: "space-between",
     alignItems: "center",
     backgroundColor: "white",
+    borderRadius: 5,
+    flexDirection: "row",
+    justifyContent: "space-between",
     marginBottom: 10,
+    marginHorizontal: 5,
+    padding: 5,
   },
   segment: {
+    alignItems: "center",
     borderRadius: 5,
     flexDirection: "column",
-    width: "30%",
-    padding: 6,
     justifyContent: "center",
-    alignItems: "center"
+    padding: 6,
+    width: "30%",
     
   },
   segmentText: {

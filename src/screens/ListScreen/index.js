@@ -1,41 +1,43 @@
-import * as React from "react";
 import { View, Text, ScrollView } from "react-native";
-import styles from "./style";
 import ProfileCard from "../../Component/ProfileCard";
+import React from "react";
+import styles from "./style";
 
 const ListScreen = () => {
   const profiles = [
     {
-      name: "Finn",
       description: "I'm a big deal",
+      name: "Finn",
       text: "Lorem ipsum dolor sit amet. Ut quae",
     },
     {
-      name: "Han",
       description: "Lorem ipsum dolor",
+      name: "Han",
       text: "Lorem ipsum dolor sit amet. Ut quae",
     },
     {
-      name: "Luke",
       description: "sit amet. Ut quae",
+      name: "Luke",
       text: "Lorem ipsum dolor sit amet. Ut quae",
     },
   ];
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <Text style={styles.title}>Recent Conversations</Text>
-        {profiles.map((profile, key) => (
-          <ProfileCard key={key} profile={profile} />
-        ))}
-      </View>
-      <View style={styles.container}>
-        <Text style={styles.title}>Online</Text>
-        {profiles.map((profile, key) => (
-          <ProfileCard key={key} profile={profile} />
-        ))}
-      </View>
-    </ScrollView>
+    <>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.title}>Recent Conversations</Text>
+          {profiles.map((profile, key) => (
+            <ProfileCard key={key} profile={profile} />
+          ))}
+        </View>
+        <View style={styles.container}>
+          <Text style={styles.title}>Online</Text>
+          {profiles.map((profile, key) => (
+            <ProfileCard key={key} profile={profile} />
+          ))}
+        </View>
+      </ScrollView>
+    </>
   );
 };
 

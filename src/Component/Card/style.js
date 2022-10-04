@@ -2,25 +2,25 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    margin: 15,
-    backgroundColor: "white",
-    flexDirection: 'column',
     alignItems: "baseline",
-    paddingBottom: 20,
+    backgroundColor: "white",
     borderRadius: 15,
+    flexDirection: 'column',
+    margin: 15,
+    paddingBottom: 20,
   },
   coverPhoto: {
-    width: "100%",
-    height: 300,
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
+    height: 300,
+    width: "100%",
   },
   textContainer: {
     paddingHorizontal: 15,
   },
   subtitle: {
-    fontSize: 16,
     color: "gray",
+    fontSize: 16,
     fontWeight: "400",
     marginTop: 10,
   },
@@ -30,17 +30,17 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   text: {
-    fontSize: 14,
     color: "gray",
+    fontSize: 14,
     marginTop: 10,
   },
   buttonContainer: {
-    width: "90%",
-    flexDirection: "row",
     alignItems: "center",
+    flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 10,
     marginHorizontal: 15,
+    marginTop: 10,
+    width: "90%",
   },
   emoji: {
     fontSize: 18,

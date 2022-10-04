@@ -2,22 +2,22 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
+    paddingLeft: 10,
+    paddingTop: 10,
     flex: 1,
-      paddingTop: 10,
-      paddingLeft: 10,
   },
   section: {
     marginVertical: 10,
-},
-title: {
+  },
+  title: {
     fontSize: 18,
     fontWeight: "500",
     marginBottom: 5,
-},
-buttonGroup: {
+  },
+  buttonGroup: {
     flexDirection: "row",
     justifyContent: "space-around",
-},
+  },
 });
 
 export default styles;

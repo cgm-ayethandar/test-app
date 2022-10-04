@@ -12,12 +12,12 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   selectContainer: {
-    margin: 10,
-    padding: 10,
-    borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: "gray",
-  }
+    borderTopWidth: 1,
+    margin: 10,
+    padding: 10,
+  },
 });
 
 export default styles;

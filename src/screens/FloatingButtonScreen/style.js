@@ -6,13 +6,13 @@ const styles = StyleSheet.create({
         position: "relative",
       },
       button: {
-        width: 50,
+        alignItems: "center",
+        borderRadius: 25,
         height: 50,
         justifyContent: "center",
-        alignItems: "center",
         padding: 10,
-        borderRadius: "50%",
         position: "absolute",
+        width: 50,
        },
 });
 

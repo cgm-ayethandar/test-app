@@ -2,14 +2,14 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "column",
     borderBottomWidth: 1,
     borderColor: "gray",
+    flexDirection: "column",
     marginBottom: 10,
   },
   labelContainer: {
-    flexDirection: "row",
     alignItems: "center",
+    flexDirection: "row",
     marginBottom: 5,
   },
   labelTitle: {
@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     fontWeight: "400",
   },
   inputField: {
-    marginBottom: 5,
     height: 25,
+    marginBottom: 5,
   }
 });
 

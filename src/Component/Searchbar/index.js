@@ -1,23 +1,34 @@
-import * as React from "react";
-import { View, Text, TextInput } from "react-native";
+import { View, TextInput } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import React, {useState} from "react";
+import RenderIf from "../RenderIf";
 import styles from "./style";
 
 const Searchbar = () => {
+  const [text, setText] = useState("");
 
-    const [text, setText] = React.useState('');
-
-    return (
-        <View style={styles.container}>
-            <Ionicons
-        name="search"
-        size={25}
-        color="gray"
+  return (
+    <>
+    <View style={styles.container}>
+      <Ionicons name="search" size={25} color="gray" />
+      <TextInput
+        onChangeText={setText}
+        placeholder={"Search"}
+        style={styles.inputField}
+        value={text}
       />
-            <TextInput style={styles.inputField} onChangeText={setText} value={text} placeholder={'Search'} />
-            {text != '' &&  <Ionicons onPress={() => setText('')} style={styles.close} name="close-circle-outline" size={20} color="black" /> } 
-        </View>
-    );
+      <RenderIf isTrue={text != ""}>
+      <Ionicons
+          color="black"
+          name="close-circle-outline"
+          onPress={() => setText("")}
+          size={20}
+          style={styles.close}
+        />
+        </RenderIf>
+    </View>
+    </>
+  );
 };
 
 export default Searchbar;

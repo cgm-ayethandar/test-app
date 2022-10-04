@@ -7,9 +7,9 @@ button: {
     marginBottom: 10,
 },
 buttonText: {
-    textAlign: "center",
     fontSize: 16,
     fontWeight: "400",
+    textAlign: "center",
 },
 });
 

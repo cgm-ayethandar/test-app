@@ -1,13 +1,15 @@
-import * as React from "react";
-import { View, ScrollView, Text, Image } from "react-native";
+import React from "react";
+import { ScrollView } from "react-native";
 import Card from "../../Component/Card";
 
 const CardScreen = () => {
   return (
-    <ScrollView>
-    <Card />
-    <Card />
-    </ScrollView>
+    <>
+      <ScrollView>
+        <Card />
+        <Card />
+      </ScrollView>
+    </>
   );
 };
 

@@ -5,8 +5,9 @@ import styles from "./style";
 const PickerScreen = () => {
   const [selectedValue, setSelectedValue] = useState("java");
   return (
-    <View style={styles.container}>
-      {/* <Picker
+    <>
+      <View style={styles.container}>
+        {/* <Picker
         selectedValue={selectedValue}
         style={{ height: 50, width: 150 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
@@ -14,10 +15,9 @@ const PickerScreen = () => {
         <Picker.Item label="Java" value="java" />
         <Picker.Item label="JavaScript" value="js" />
       </Picker> */}
-    </View>
+      </View>
+    </>
   );
-}
-
-
+};
 
 export default PickerScreen;

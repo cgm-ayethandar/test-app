@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
   inputFieldContainer: {
     marginBottom: 20,
   },
-  
 });
 
 export default styles;

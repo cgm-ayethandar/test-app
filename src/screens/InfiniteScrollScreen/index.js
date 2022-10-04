@@ -1,5 +1,5 @@
-import { FunctionComponent, useState } from "react";
 import { RefreshControl, ScrollView, Text } from "react-native";
+import { useState } from "react";
 
 const InfiniteScrollScreen = () => {
   const [refreshing, setRefreshing] = useState(false);
@@ -22,13 +22,9 @@ const InfiniteScrollScreen = () => {
           />
         }
       >
-        {
-          Object.entries(items).map((key, item) => {
-            return (
-              <Text key={key}>{item}</Text>
-            );
-          })
-        }
+        {Object.entries(items).map((key, item) => {
+          return <Text key={key}>{key}</Text>;
+        })}
       </ScrollView>
     </>
   );

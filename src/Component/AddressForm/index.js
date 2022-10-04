@@ -1,25 +1,52 @@
-import * as React from "react";
 import { View, Text, TextInput } from "react-native";
+import React, {useState} from "react";
 import styles from "./style";
 
 const AddressForm = () => {
-  const [address1, setAddress1] = React.useState("");
-  const [address2, setAddress2] = React.useState("");
-  const [city, setCity] = React.useState("");
-  const [state, setState] = React.useState("");
-  const [zipcode, setZipcode] = React.useState("");
+  const [address1, setAddress1] = useState("");
+  const [address2, setAddress2] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [zipcode, setZipcode] = useState("");
 
   return (
+    <>
     <View style={styles.container}>
       <View style={styles.labelContainer}>
-      <Text style={styles.labelTitle}>Address</Text>
+        <Text style={styles.labelTitle}>Address</Text>
       </View>
-      <TextInput style={styles.inputField} onChangeText={setAddress1} value={address1} placeholder={'Address Line 1'} />
-      <TextInput style={styles.inputField} onChangeText={setAddress2} value={address2} placeholder={'Address Line 2'} />
-      <TextInput style={styles.inputField} onChangeText={setCity} value={city} placeholder={'City'} />
-      <TextInput style={styles.inputField} onChangeText={setState} value={state} placeholder={'State'} />
-      <TextInput style={styles.inputField} onChangeText={setZipcode} value={zipcode} placeholder={'Zip Code'} />
+      <TextInput
+        onChangeText={setAddress1}
+        placeholder={"Address Line 1"}
+        style={styles.inputField}
+        value={address1}
+      />
+      <TextInput
+        onChangeText={setAddress2}
+        placeholder={"Address Line 2"}
+        style={styles.inputField}
+        value={address2}
+      />
+      <TextInput
+        onChangeText={setCity}
+        placeholder={"City"}
+        style={styles.inputField}
+        value={city}
+      />
+      <TextInput
+        onChangeText={setState}
+        placeholder={"State"}
+        style={styles.inputField}
+        value={state}
+      />
+      <TextInput
+        onChangeText={setZipcode}
+        placeholder={"Zip Code"}
+        style={styles.inputField}
+        value={zipcode}
+      />
     </View>
+    </>
   );
 };
 

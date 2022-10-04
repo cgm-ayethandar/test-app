@@ -1,10 +1,11 @@
-import * as React from "react";
 import { View, Text, Image } from "react-native";
-import styles from "./style";
+import React from "react";
 import SmallButton from "../SmallButton";
+import styles from "./style";
 
 const Card = () => {
   return (
+    <>
     <View style={styles.container}>
       <Image
         style={styles.coverPhoto}
@@ -26,6 +27,7 @@ const Card = () => {
         </View>
       </View>
     </View>
+    </>
   );
 };
 

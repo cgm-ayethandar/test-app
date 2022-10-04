@@ -2,14 +2,14 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 button: {
-    paddingVertical: 20,
-    paddingHorizontal: 25,
     borderRadius: "12%",
+    paddingHorizontal: 25,
+    paddingVertical: 20,
 },
 buttonText: {
-    textAlign: "center",
     fontSize: 18,
     fontWeight: "500",
+    textAlign: "center",
 },
 });
 

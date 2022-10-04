@@ -2,13 +2,13 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   chip: {
-    flexDirection: "row",
     alignItems: "center",
-    paddingVertical: 6,
-    paddingHorizontal: 10,
-    borderRadius: "50%",
+    borderRadius: 20,
     borderWidth: 1,
+    flexDirection: "row",
     marginBottom: 10,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
   },
   chipText: {
     fontSize: 14,

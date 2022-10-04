@@ -2,38 +2,38 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
   },
   sideView: {
     flex: 1,
   },
   modalView: {
-    width: "70%",
-    height: "100%",
-    backgroundColor: "white",
     alignItems: "center",
+    backgroundColor: "white",
+    elevation: 5,
+    height: "100%",
+    width: "70%",
     shadowColor: "#000",
     shadowOffset: {
+      height: 2,
       width: 0,
-      height: 2
     },
     shadowOpacity: 0.25,
     shadowRadius: 4,
-    elevation: 5
   },
   modalTitle: {
-    width: "100%",
-    textAlign: "center",
-    fontSize: 18,
-    fontWeight: "bold",
-    paddingTop: 25,
-    padding: 16,
+    backgroundColor: "#D3D3D3",
     borderBottomWidth: 1,
     borderColor: "gray",
-    backgroundColor: "#D3D3D3",
-  }
+    fontSize: 18,
+    fontWeight: "bold",
+    padding: 16,
+    paddingTop: 25,
+    textAlign: "center",
+    width: "100%",
+  },
 });
 
 export default styles;

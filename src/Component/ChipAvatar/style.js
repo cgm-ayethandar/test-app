@@ -2,21 +2,21 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-      width: "38%",
-      flexDirection: "row",
-      paddingVertical: 5,
-      paddingHorizontal: 5,
-      backgroundColor: "gray",
       alignItems: "center",
-      borderRadius: "50%",
+      backgroundColor: "gray",
+      borderRadius: 35,
+      flexDirection: "row",
+      paddingHorizontal: 5,
+      paddingVertical: 5,
+      width: "38%",
     },
     text: {
         fontSize: 16,
         marginLeft: 10,
     },
     profile: {
-      width: 35,
       height: 35,
+      width: 35,
     },
   });
 
