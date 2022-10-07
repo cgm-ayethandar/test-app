@@ -1,6 +1,7 @@
 import { Pressable } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import React, { useState } from "react";
+import RenderIf from "../RenderIf";
 import styles from "./style";
 
 function Checkbox({ bgColor }) {
