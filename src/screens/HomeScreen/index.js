@@ -1,4 +1,5 @@
-import { ScrollView, View, Text, TouchableOpacity } from "react-native";
+import { FlatGrid } from "react-native-super-grid";
+import { Text, TouchableOpacity } from "react-native";
 import React from "react";
 import styles from "./style";
 
@@ -17,43 +18,45 @@ const HomeScreen = ({ navigation }) => {
     { title: "DateTime", routeName: "DateTime" },
     { title: "FloatingButtons", routeName: "FloatingButton" },
     { title: "Grid", routeName: "Grid" },
+    { title: "InfiniteScroll", routeName: "InfiniteScroll" },
     { title: "Input", routeName: "Input" },
     { title: "Item", routeName: "Item" },
     { title: "ItemGroup", routeName: "ItemGroup" },
-    { title: "InfiniteScroll", routeName: "InfiniteScroll" },
     { title: "List", routeName: "List" },
     { title: "Loading", routeName: "Loading" },
-    { title: "Searchbar", routeName: "Searchbar" },
-    { title: "Refresher", routeName: "Refresher" },
     { title: "Menu", routeName: "Menu" },
     { title: "Modal", routeName: "Modal" },
+    { title: "Picker", routeName: "Picker" },
+    { title: "Play mp3", routeName: "PlayMp3" },
     { title: "Popover", routeName: "Popover" },
     { title: "Radio", routeName: "Radio" },
-    { title: "Picker", routeName: "Picker" },
+    { title: "Refresher", routeName: "Refresher" },
+    { title: "Searchbar", routeName: "Searchbar" },
     { title: "Segment", routeName: "Segment" },
-    { title: "Toggle", routeName: "Toggle" },
-    { title: "Toast", routeName: "Toast" },
+    { title: "Select", routeName: "Select" },
     { title: "Skeleton Text", routeName: "SkeletonText" },
     { title: "Slider", routeName: "Slider" },
-    { title: "Select", routeName: "Select" },
-    { title: "Play mp3", routeName: "PlayMp3" },
+    { title: "Toast", routeName: "Toast" },
+    { title: "Toast2", routeName: "Toast2" },
+    { title: "Toggle", routeName: "Toggle" },
   ];
 
   return (
     <>
-    <ScrollView>
-      <View style={styles.container}>
-        {list.map((item, key) => (
+      <FlatGrid
+        itemDimension={130}
+        data={list}
+        style={styles.gridView}
+        spacing={10}
+        renderItem={({ item }) => (
           <TouchableOpacity
-            key={key}
+            style={styles.itemContainer}
             onPress={() => navigation.navigate(`${item.routeName}`)}
-            style={styles.item}
           >
-            <Text style={styles.itemText}>{item.title}</Text>
+            <Text style={styles.itemName}>{item.title}</Text>
           </TouchableOpacity>
-        ))}
-      </View>
-    </ScrollView>
+        )}
+      />
     </>
   );
 };

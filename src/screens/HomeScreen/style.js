@@ -6,14 +6,23 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
   },
-  item: {
-    borderTopWidth: 1,
-    paddingVertical: 10,
-    width: "90%",
+  gridView: {
+    flex: 1,
+    marginTop: 10,
   },
-  itemText: {
+  itemContainer: {
+    alignItems: "center",
+    backgroundColor: "#DCDCDC",
+    borderRadius: 5,
+    height: 150,
+    justifyContent: 'center',
+    padding: 10,
+  },
+  itemName: {
+    color: '#000',
     fontSize: 16,
-    paddingLeft: 10,
+    fontWeight: '600',
+    textAlign: "center",
   },
 });
 

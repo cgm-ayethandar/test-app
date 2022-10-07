@@ -23,8 +23,8 @@ const ContentScreen = () => {
   return (
     <>
       <ScrollView ref={scrollRef} style={styles.container}>
-        <TouchableOpacity style={styles.buttom} onPress={scrollToBottom}>
-          <Text style={styles.buttonText}>Scroll to botton</Text>
+        <TouchableOpacity style={styles.button} onPress={scrollToBottom}>
+          <Text style={styles.buttonText}>Scroll to bottom</Text>
         </TouchableOpacity>
         {list.map((item, key) => (
           <View style={styles.titleContainer}>
