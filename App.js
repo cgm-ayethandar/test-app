@@ -40,6 +40,7 @@ import SliderScreen from "./src/screens/SliderScreen";
 import ToastScreen from "./src/screens/ToastScreen";
 import ToastScreen2 from "./src/screens/ToastScreen2";
 import ToggleScreen from "./src/screens/ToggleScreen";
+import Scanner from "./src/screens/Scanner";
 
 const Stack = createNativeStackNavigator();
 
@@ -97,6 +98,7 @@ function App() {
               <Stack.Screen name="Slider" component={SliderScreen} />
               <Stack.Screen name="Select" component={SelectScreen} />
               <Stack.Screen name="PlayMp3" component={PlayMp3Screen} />
+              <Stack.Screen name="Scanner" component={Scanner} />
             </Stack.Navigator>
           </NavigationContainer>
         </SafeAreaProvider>

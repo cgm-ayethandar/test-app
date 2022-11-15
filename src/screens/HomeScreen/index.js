@@ -39,6 +39,8 @@ const HomeScreen = ({ navigation }) => {
     { title: "Toast", routeName: "Toast" },
     { title: "Toast2", routeName: "Toast2" },
     { title: "Toggle", routeName: "Toggle" },
+    { title: "Scanner", routeName: "Scanner" },
+
   ];
 
   return (
