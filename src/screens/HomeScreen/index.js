@@ -40,6 +40,7 @@ const HomeScreen = ({ navigation }) => {
     { title: "Toast2", routeName: "Toast2" },
     { title: "Toggle", routeName: "Toggle" },
     { title: "Scanner", routeName: "Scanner" },
+    { title: "Notification", routeName: "Notification" },
 
   ];
 

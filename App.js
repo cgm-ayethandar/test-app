@@ -41,6 +41,7 @@ import ToastScreen from "./src/screens/ToastScreen";
 import ToastScreen2 from "./src/screens/ToastScreen2";
 import ToggleScreen from "./src/screens/ToggleScreen";
 import Scanner from "./src/screens/Scanner";
+import Notification from "./src/screens/Notification";
 
 const Stack = createNativeStackNavigator();
 
@@ -99,6 +100,7 @@ function App() {
               <Stack.Screen name="Select" component={SelectScreen} />
               <Stack.Screen name="PlayMp3" component={PlayMp3Screen} />
               <Stack.Screen name="Scanner" component={Scanner} />
+              <Stack.Screen name="Notification" component={Notification} />
             </Stack.Navigator>
           </NavigationContainer>
         </SafeAreaProvider>
